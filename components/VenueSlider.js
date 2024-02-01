@@ -55,9 +55,9 @@ export default function VenueSlider(){
             <div className="flex flex-col  bg-white  w-full lg:mr-5 m-0 z-0 "> 
                 <div className="text-2xl lg:text-5xl w-full ml-2 lg:mt-10">{venueSpotlight}</div>
                                 { venueSpotlight == "We pair music with venues like no one else." ?
-                                    <div className="flex h-[50vh] w-full flex justify-center items-center"><Image priority height={500} width={1000} src='/white_spin_logo.gif'></Image></div>
+                                    <div className="flex h-[50vh] w-full flex justify-center items-center"><Image priority={true} loading="eager" height={500} width={1000} src='/white_spin_logo.gif'></Image></div>
                                     :
-                                    <Image className="lg:ml-auto lg:h-2/5 lg:w-2/5 w-full mb-5 mt-5 lg:m-10" src={ven.images[venueSpotlight]} height={200} width={200}></Image>
+                                    <Image  priority={true} loading="eager" className="lg:ml-auto lg:h-2/5 lg:w-2/5 w-full mb-5 mt-5 lg:m-10" src={ven.images[venueSpotlight]} height={200} width={200}></Image>
                                     
                                 }
                 <div className="text-sm lg:text-lg mb-10 lg:mx-5">This is a paragraph about the venue,  Dolor nostrud sint eiusmod dolore ea. Irure eiusmod incididunt occaecat excepteur eiusmod ad voluptate cillum. Dolor nostrud sint eiusmod dolore ea. Irure eiusmod incididunt occaecat excepteur eiusmod ad voluptate cillum.</div>

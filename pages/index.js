@@ -43,7 +43,7 @@ export default function Home() {
             <div className="flex flex-col absolute z-2">
             <Hero className="z-38 w-full top-0 "/>
             {width > 700 ? <Navbar className="absolute z-10 bg-transparent"/> : <MenuButton/>}
-            {width < 700 ? <div className="absolute z-0 h-[70vh] lg:h-[100vh] w-[100vw] flex justify-center items-center align-center"><Image priority height={1000} width={2000} src='/white_spin_logo.gif'></Image></div> : <></>}
+            {width < 700 ? <div className="absolute z-0 h-[70vh] lg:h-[100vh] w-[100vw] flex justify-center items-center align-center"><Image priority={true} loading='eager' height={1000} width={2000} src='/white_spin_logo.gif'></Image></div> : <></>}
 
             </div>
 

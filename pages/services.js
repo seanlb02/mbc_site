@@ -34,20 +34,20 @@ export default function Events() {
       <heading className="text-5xl lg:m-10 m-10 mb-5">
             Booze, Glorious Booze 
         </heading>
-        <div className='lg:m-11 mx-10 text-l lg:text-2xl text-left'>MBC are experts in all things booze! We understand what it takes to get drinks into peoples hands at events. This means your patrons spend less time in lines and more time enjoying your event! We understand it because we live it. We work with an array of businesses from small bespoke events to large scale outdoor festivals not to mention our own events!
+        <div className='lg:m-11 ml-10 mr-6 text-l lg:text-2xl text-left'>MBC are experts in all things booze! We understand what it takes to get drinks into peoples hands at events. This means your patrons spend less time in lines and more time enjoying your event! We understand it because we live it. We work with an array of businesses from small bespoke events to large scale outdoor festivals not to mention our own events!
          <u className="pl-1 hover:text-slate-500 cursor-pointer" onClick={()=> Router.push('/contact')}>Get in touch</u></div>
 
-        <heading className="text-5xl lg:m-10 m-10 mb-50">
+        <heading className="lg:text-5xl text-4xl lg:m-10 m-10 mb-50">
             Our Friends 
         </heading>
         <div className='lg:m-12 mx-10  lg:text-2xl'>We work with a number of clients in a variety of ways from festival programming to hospitality solutions. Check out some of our mates below.</div>
         <div className="flex w-full h-[50vh] justify-center mb-24">
-            <Image src="/mates.png" height={1000} width={1000}  className='h-full w-2/4 m-10'></Image>
+            <Image src="/mates.png" height={1000} width={1000}  className='h-full lg:w-2/4 w-3/4 m-10'></Image>
         </div>
-        <div className="flex flex-col lg:flex-row">
-            <Testimonial image="/paulstix.png" name="Paul Stix" text="hey hey test"/>
-            <Testimonial image="/paulstix.png" name="Paul Stix" text="hey hey test"/>
-            <Testimonial image="/paulstix.png" name="Paul Stix" text="hey hey test"/>
+        <div className="flex flex-col border items-center lg:flex-row">
+            <Testimonial image="/paulstix.png" name="Paul Stix" text="hey hey testimonial goes here"/>
+            <Testimonial image="/paulstix.png" name="Paul Stix" text="hey hey testimonial goes here"/>
+            <Testimonial image="/paulstix.png" name="Paul Stix" text="hey hey testimonial goes here"/>
         </div>
       <Hero />
 
@@ -57,5 +57,5 @@ export default function Events() {
 }
 
 const styles = {
-  pageContainer: "flex flex-col h-[100vh]  cursor-crosshair font-mono"
+  pageContainer: "flex flex-col items-center overflow-x-hidden h-[100vh] max-w-[100vw] cursor-crosshair font-mono"
 }

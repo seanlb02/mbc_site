@@ -64,18 +64,17 @@ const [genreProp, setGenreProp] = useState("")
                           <></>
                         }
                             {width < 700 ?
-                           
+                            <Draggable disabled="true">
                                 <div className="top-20 z-30  h-full px-3 w-fit  pb-3 border-black bg-white lg:border-4 overflow-y-scroll overflow-x-hidden no-scrollbar"> 
                                 {width > 700 ? <div  className="sticky top-0 right-0 pr-2 h-6 pt-1 z-20 bg-white text-black items-right h-fit w-full align-right text-xs text-right">[drag me] </div> : <></>}
 
                                     <Algo genre={genreProp}/>
                                 </div>
-                         
+                            </Draggable>
                             :
                             <Draggable>
                             <div className="top-20 z-30  h-full px-3 w-fit mt-0 pb-3 border-black bg-white border-4 overflow-y-scroll overflow-x-hidden no-scrollbar"> 
-                            <div className="sticky top-0 z-20 bg-transparent h-24 w-full">[drag me]</div>
-
+                            <div  className="sticky top-0 right-0 pr-2 h-6 pt-1 z-20 bg-white text-black items-right h-fit w-full align-right text-xs text-right">[drag me] </div>
                                 <Algo genre={genreProp}/>
                             </div>
                             </Draggable>

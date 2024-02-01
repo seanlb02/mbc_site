@@ -36,20 +36,20 @@ export default function VenueSlider(){
     return (
     <>
 
-        { width < 800 ?             
+        { width < 700 ?             
             
-            <div className="font-mono flex bg-white  z-20 w-[100vw] h-fit lg:h-ful mr-10 pt-5 animate-left gap-5 flex-col p-5 lg:p-12">
+            <div className="font-mono flex bg-white  z-20 w-[100vw] h-fit lg:h-ful mr-10 pt-5  gap-5 flex-col p-5 lg:p-12">
                 <div className="text-sm" onClick={()=>setDropNavShow(!dropNavShow)}>[Select venue]</div>
                     {   dropNavShow ? 
                         venues.map((el)=><div className="text-sm hover:text-slate-500"  onClick={()=> selectVenue(el)}>{el}</div>)
                         :
-<></>                    }
+                <></>                    }
             </div>
             :
             <></>
         }
-    <div className="flex h-[100vh] w-[100vw] z-0 font-mono">
-            <div className="flex flex-col mx-5 bg-white h-[100vh] lg:w-3/4 w-full z-0 lg:ml-10 animate-left1 items-center">
+            <div className="flex h-[100vh] w-[100vw] z-0 font-mono">
+            <div className="flex flex-col mx-5 bg-white h-[100vh] lg:w-3/4 w-full z-0 lg:ml-10 lg:animate-left1 items-center">
             
             
             <div className="flex flex-col  bg-white  w-full lg:mr-5 m-0 z-0 "> 
@@ -79,7 +79,7 @@ export default function VenueSlider(){
 
         {/* conditionally render top nav over side for mobile */}
         
-        { width > 800 ? 
+        { width > 700 ? 
         <div className="flex bg-white border border-r-black border-l-black z-0 w-1/4 h-full mr-10 animate-left gap-5 flex-col p-12">
             {venues.map((el)=><div className="text-md hover:text-slate-500"  onClick={()=> setVenueSpotlight(el)}>{el}</div>)}
 

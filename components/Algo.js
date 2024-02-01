@@ -4,7 +4,7 @@ import Script from "next/script"
 import {useState, useEffect, useRef} from 'react'
 import { useSearchParams } from 'next/navigation'
 import { useRouter } from 'next/router'
-import htmlString from '../public/html/all'
+import htmlString from '@/public/html/all'
 
 import { usePathname } from 'next/navigation';
 

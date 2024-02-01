@@ -11,7 +11,7 @@ import MobileNavbar from '@/components/MobileNavbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Festivals() {
-    const festivals = ['King Street Carnival','Bad Friday', 'Beer, Footy n Food', 'Country and Inner Western', 'Off the Rails']
+    const festivals = ['King St Carnival','Bad Friday', 'Beer, Footy n Food', 'Country and Inner Western', 'Off the Rails']
     const logos = ['/kingstreet.png', '/badfriday.png', '/beerfooty.png', '/countryinner.png']
 
     const [width, setWidth] = useState(0)

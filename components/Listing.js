@@ -42,7 +42,7 @@ useEffect(() => {
             </section>
 
             <section id="image-reel" className={styles.itemContainer}>
-                <div className={styles.imageBox}><Image src={logo} width={1000} height={1000} className="h-full w-full"></Image></div>
+                <div className={styles.imageBox}><Image src={logo} width={500} height={500} className="flex h-1/2 w-1/2 "></Image></div>
                 {images.map((el)=> <div className={styles.imageBox}><Image src='/band.jpg' width={100} height={100} className="h-full w-full"></Image></div>)}
             </section>
         </main>
@@ -51,5 +51,5 @@ useEffect(() => {
 
 const styles = {
     itemContainer: "flex flex-row h-[50vh] w-[100vw] lg:h-full overflow-auto no-scrollbar",
-    imageBox: "flex min-w-96"
+    imageBox: "flex flex-col min-w-96 items-center justify-center"
 }

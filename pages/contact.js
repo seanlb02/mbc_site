@@ -42,7 +42,7 @@ export default function Events() {
       {recaptcha ?
         <div className="flex h-[50vh] justify-center align-center items-center w-[100vw] lur-lg from-transparent bg-white top-56 absolute z-30">
              <ReCAPTCHA
-                sitekey="6LdE91clAAAAAIm4OUdhD1P9z9iJ_Lc6n7RUiLOY"
+                sitekey="6LcNxGMpAAAAAMLyG22hY46YoeXTKz_YNDUsMW41"
                 onChange={()=>allowEmail()}/>
         </div>
         :

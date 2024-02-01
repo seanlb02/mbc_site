@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.left-panel { float: left; margin-top: 1em; width: 250px; }
+.right-panel { margin-left: 260px; }
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +31,40 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+@keyframes slidein {
+  0% {
+    transform: translateX(-50%);
+}
+
+50% {
+  transform: translateX(10%);
+}
+
+100% {
+  transform: translateX(-50%)
+}
+
+}
+
+#reel {
+  animation-name: slidein;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
+}
+
+video {
+  object-fit: fill;
+}
+
+#contrastText {
+  color: white; 
+  mix-blend-mode: difference;
+}
+
+#contrastTextBlack {
+  color: black; 
+  mix-blend-mode: difference;
 }

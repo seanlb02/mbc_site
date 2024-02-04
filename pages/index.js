@@ -40,10 +40,14 @@ export default function Home() {
            
           <video autoplay="autoplay" muted loop className='absolute z-0 h-[100vh] lg:h-[172vh] w-[100vw] flex flex-col'> <source src='/badbrains.mp4' type="video/mp4"/>  </video> 
           {rearrange ? 
-            <div className="flex flex-col absolute z-2">
-            <Hero className="z-38 w-full top-0 "/>
+            <div className="flex flex-col h-full absolute z-2">
             {width > 700 ? <Navbar className="absolute z-10 bg-transparent"/> : <MenuButton/>}
             {width < 700 ? <div className="absolute z-0 h-[70vh] lg:h-[100vh] w-[100vw] flex justify-center items-center align-center"><Image priority={true} loading='eager' height={1000} width={2000} src='/white_spin_logo.gif'></Image></div> : <></>}
+            {width < 700 ? <div className="block flex flex-row max-h-36 min-w-  bg-white z-40 bottom-16 left-0 right-0 text-center absolute mb-2 m-10 lg:mt-12 py-8 px-2 border border-black text-center text-xs">
+                  <div className="flex flex-auto w-72 max-h-36">
+                    Aknowledgement of country text here maybe or bio?Aknowledgement of country text here maybe or bio?Aknowledgement of country text here maybe or bio?
+                  </div>
+              </div> : <></>}
 
             </div>
 

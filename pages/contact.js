@@ -78,7 +78,6 @@ export default function Events() {
                     <div>Every submission gets added to our database which is checked regularly for when slots become free</div>
 
                 </div>
-                <div className="bg-white z-40 bottom-10 mb-2 m-10 lg:mt-12 py-8 px-2 border border-black text-center text-xs">Aknowledgement of country text here maybe?</div>
 
             </div>
             {width > 700 ? 

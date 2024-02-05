@@ -24,8 +24,8 @@ export default function Hero() {
         <main className={styles.pageContainer}>
             <section id="header" className={styles.main}> 
             
-            <div className="flex flex-col w-1/4 border-r border-black p-4 text-left">
-                <div className="flex flex-col text-sm">
+            <div className="flex flex-col items-center w-1/4 border-r border-black p-4 text-left">
+                <div className="flex flex-col text-left flex-start w-full text-sm">
                 Bio or something here<br></br>Quis laborum ea exercitation labore ea eiusmod ipsum. <b></b>
                 <n></n>
                 Dolor nostrud sint eiusmod dolore ea. Irure eiusmod incididunt occaecat excepteur eiusmod ad voluptate cillum. 

@@ -17,13 +17,24 @@ module.exports = {
         left: {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
+        },
+        fadein : {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        fadeout : {
+          '0%': { opacity: 1 },
+          '100%': { opacity: 0 },
         }
 
       },
       animation: {
         'down': 'down 450ms ease-in',
         'left': 'left 450ms ease-in',
-        'left1': 'left 900ms ease-in-out'
+        'left1': 'left 900ms ease-in-out',
+        'fadein': 'fadein 900ms ease-in',
+        'fadeout': 'fadeout 900ms ease-in',
+
       },
       fontFamily: {'sans': ['Helvetica', 'Arial', 'sans-serif']},
       backgroundImage: {

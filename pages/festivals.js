@@ -45,5 +45,5 @@ export default function Festivals() {
 }
 
 const styles = {
-  pageContainer: "flex flex-col h-fit w-[100vw] cursor-crosshair font-mono no-scrollbar"
+  pageContainer: "scroll-smooth flex flex-col h-fit w-[100vw] cursor-crosshair font-mono no-scrollbar"
 }

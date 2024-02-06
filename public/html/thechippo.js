@@ -26,7 +26,7 @@ const chippo = `<html>
 
 	
 
-	const event_filter=[""]
+	const event_filter=''
 
 
 
@@ -182,7 +182,7 @@ const chippo = `<html>
 
                 useHash: false,
 
-                trackedParameters: ['query', 'attribute:*', 'page', 'hitsPerPage']
+                trackedParameters: ['']
 
 			},
 

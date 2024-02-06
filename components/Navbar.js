@@ -19,7 +19,7 @@ export default function Navbar() {
                     <a className="flex w-2/5 border border-r-black hover:border-2 hover:bg-slate-50 pl-4 py-3" href="/shows">Whats on</a>
                     <div className="flex w-1/5 border border-r-black hover:border-2 hover:bg-slate-50 pl-4 py-3" onClick={()=> Router.push('/festivals')}>Festivals</div>
                     <div className="flex w-1/5 border border-r-black hover:border-2 hover:bg-slate-50 pl-4 py-3" onClick={()=> Router.push('/services')}>Booze</div>
-                    <div className="flex w-1/5 border border-r-black hover:border-2 hover:bg-slate-50 pl-4 py-3" onClick={()=> Router.push('/venues')}>Venues</div>
+                    <a className="flex w-1/5 border border-r-black hover:border-2 hover:bg-slate-50 pl-4 py-3" href='/venues'>Venues</a>
                     <div className="flex w-16 items-center hover:border-2-black hover:bg-slate-50 justify-center" onClick={()=> Router.push('/')}><div className="w-fit h-fit rounded-full bg-black p-1"><Image src="/mbc_small.png" height={25} width={30}></Image></div></div>
                 </div>
             </div>

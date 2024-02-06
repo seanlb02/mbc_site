@@ -25,6 +25,10 @@ module.exports = {
         fadeout : {
           '0%': { opacity: 1 },
           '100%': { opacity: 0 },
+        },
+        blurin:{
+          '0%': { filter: "blur(16px)" },
+          '100%': { filter: "blur(0px)" },
         }
 
       },
@@ -34,7 +38,8 @@ module.exports = {
         'left1': 'left 900ms ease-in-out',
         'fadein': 'fadein 900ms ease-in',
         'fadeout': 'fadeout 900ms ease-in',
-
+        'blurin' : 'blurin 800ms ease-out',
+        'blurinslow' : 'blurin 1100ms ease-out',
       },
       fontFamily: {'sans': ['Helvetica', 'Arial', 'sans-serif']},
       backgroundImage: {

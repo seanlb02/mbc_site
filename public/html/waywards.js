@@ -31,7 +31,7 @@ const waywards = `<html>
 
 	
 
-	const event_filter=[""]
+	const event_filter=''
 
 
 
@@ -101,7 +101,7 @@ const waywards = `<html>
 
     <script src="//www.oztix.com.au/js/moment-timezone-with-data.min.js"></script>
 
-    <input id="eventsearchbar" name="q" placeholder="Search for events" style="width: 100%;" />
+    <input id="eventsearchbar" name="q" placeholder="Search for events" style="display:none" />
 
     <div class="entries">
 
@@ -117,27 +117,27 @@ const waywards = `<html>
 
               <section class="facet-wrapper">
 
-                <div class="facet-category-title">Refine by</div>
+                <div class="facet-category-title" style="display:none" >Refine by</div>
 
                 <!-- comment out the below line to remove STATE from the refine by section -->
 
-                <!-- <div id="state" class="facet"></div> -->
+                <!-- <div id="state" class="facet" style="display:none" ></div> -->
 
                 <!-- comment out the below line to remove VENUE from the refine by section -->
 
-                <!-- <div id="venue" class="facet"></div> -->
+                <!-- <div id="venue" class="facet" style="display:none" ></div> -->
 
                 <!-- comment out the below line to remove BAND from the refine by section -->
 
-                <div id="band" class="facet"></div>
+                <div id="band" class="facet" style="display:none" ></div>
 
                 <!-- comment out the below line to remove TOUR from the refine by section -->
 
-                <!-- <div id="eventtour" class="facet"></div> -->
+                <!-- <div id="eventtour" class="facet" style="display:none" ></div> -->
 
                 <!-- comment out the below line to remove CATEGORIES from the refine by section -->
 
-                <div id="categories" class="facet"></div>
+                <div id="categories" class="facet" style="display:none" ></div>
 
               </section>
 
@@ -187,7 +187,7 @@ const waywards = `<html>
 
                 useHash: false,
 
-                trackedParameters: ['query', 'attribute:*', 'page', 'hitsPerPage']
+                trackedParameters: ['']
 
 			},
 

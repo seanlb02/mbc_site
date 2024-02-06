@@ -47,6 +47,8 @@ export default function Map({latitude, longitude}) {
     const geolocationAPI = navigator.geolocation;
     const [long, setLong] = useState("");
     const [noGPS, setNoGPS] = useState(false);
+    const [showMap, setShowMap] = useState(false)
+
     
     // var map = new mapboxgl.Map({
     //   container: 'map1',
@@ -61,11 +63,19 @@ export default function Map({latitude, longitude}) {
     const [lat, setLat] = useState(-37.81400000);
     const [zoom, setZoom] = useState(18);
 
+     useEffect(()=> {
+       setTimeout(() => {
+        setShowMap(true)
+      }, "2000");
+          
+    }, [])
+
+    
 
 return (
 
     <div className={styles.pageContainer}>
-        <MapboxMap latitude={-33.89408834621491} longitude={151.17954556766304}/>
+       {showMap ? <MapboxMap latitude={-33.89408834621491} longitude={151.17954556766304}/> : <img src='/loading.gif'></img>}
     </div>
 ) 
 }

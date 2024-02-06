@@ -16,7 +16,7 @@ export default function MobileNavbar() {
         <>
 
             <div className={styles.NavContainer}>
-                <div className="items-center w-[100vw] h-[24] sticky top-0 bg-white flex justify-center"><Image height={80} width={200} src={'/MBC_logo.png'} className="flex items-center h-[20] w-[80vw]"></Image></div>
+                <div className="items-center w-[100vw] h-[24] sticky top-0 bg-white flex justify-center" onClick={()=> Router.push('/')}><Image height={80} width={200} src={'/MBC_logo.png'} className="flex items-center h-[20] w-[80vw]"></Image></div>
                 <div className="text-sm bg-white flex m-auto pl-6 gap-24 p-2">
                     <div className="flex text-xs" onClick={() => setVenueShow(!venueShow)}><u>menu</u></div>
                     

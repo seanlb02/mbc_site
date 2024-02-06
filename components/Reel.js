@@ -55,7 +55,7 @@ const [genreProp, setGenreProp] = useState("")
                         }
                     <div className="flex flex-col w-[100vw] lg:flex-row">
                         <div className=" cursor-move flex flex-col items-center h-[75vh] w-[100vw] bg-transparent">
-                        {width < 800 ? <div className="mx-3 mt-2 mb-4 text-sm" onClick={()=> setGenreShow(!genreShow)}>[Select by genre]</div> : <></>}
+                        {width < 800 ? <div className="mx-3 mt-2 mb-4 text-sm" onClick={()=> setGenreShow(!genreShow)}>[Filter by genre]</div> : <></>}
                         { width < 800 && genreShow ? 
                           <div className="flex bg-white border pb-1 border-black px-16 m-5 mt-3 z-0 h-36 flex-col items-center overflow-y-scroll no-scrollbar">
                               {genres.map((el)=><a id="contrastText" className="flex z-50 text-sm w-fit py-1 " href={`/shows?q=&hPP=20&p=0&dFR[Categories][0]=${el}&is_v=1`}>{el}</a>)}

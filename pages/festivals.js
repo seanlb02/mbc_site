@@ -33,11 +33,11 @@ export default function Festivals() {
       <heading className="text-3xl lg:text-5xl m-6 mb-0 lg:m-10">
             Our Festivals 
         </heading>
-        <Listing name={festivals[0]} artist='Press' logo={logos[0]}/>
-        <Listing name={festivals[1]} artist='Press' logo={logos[1]}/>
-        <Listing name={festivals[2]} artist='Press' logo={logos[2]}/>
-        <Listing name={festivals[3]} artist='Press' logo={logos[3]}/>
-        <Listing name={festivals[4]} artist='Press' logo={logos[4]}/>
+        <Listing name={festivals[0]} artist='Press' logo={logos[0]} location="Newtown" date="September"/>
+        <Listing name={festivals[1]} artist='Press' logo={logos[1]} location="Marrickville" date="April"/>
+        <Listing name={festivals[2]} artist='Press' logo={logos[2]} location="Hensen Oval" date="September"/>
+        <Listing name={festivals[3]} artist='Press' logo={logos[3]} location="St Peters" date = "dunno"/>
+        <Listing name={festivals[4]} artist='Press' logo={logos[4]} location="Marrickville" date="November"/>
 
 
     </main>

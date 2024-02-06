@@ -47,6 +47,10 @@
 
 }
 
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
 #reel {
   animation-name: slidein;
   animation-duration: 30s;

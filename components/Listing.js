@@ -7,7 +7,7 @@ import { Tooltip, Button } from "@material-tailwind/react";
 
 
 
-export default function Listing({name, artist, label, logo}) {
+export default function Listing({name, artist, label, logo, location, date}) {
 const images = [1, 2, 3, 4, 5]
 const [width, setWidth] = useState(0)
 const handleResize = () => setWidth(window.innerWidth)
@@ -28,12 +28,18 @@ useEffect(() => {
                     {artist}
                 </div>
                 <div className="flex h-full lg:pb-1 w-1/5 items-end lg:text-sm text-xs pl-3 border-l border-black">
-                    <div className="flex flex-col gap-1  text-xs lg:text-sm">
+                    <div className="flex flex-col gap-1 w-full text-xs lg:text-sm">
                         {width > 700 ?
-                        <>
-                        <div>Location</div>
-                        <div>When</div>
-                        </>
+                        <div className="flex w-full gap-12">
+                            <div>
+                            <div className="font-bold">Location</div>
+                            <div className="font-bold">When</div>
+                            </div>
+                            <div>
+                            <div>{location}</div>
+                            <div>{date}</div>
+                            </div>
+                        </div>
                         :
                         <div className="text-xs pb-2">Tickets</div>
                         }   
@@ -51,5 +57,5 @@ useEffect(() => {
 
 const styles = {
     itemContainer: "flex flex-row h-[50vh] w-[100vw] lg:h-full overflow-auto no-scrollbar",
-    imageBox: "flex flex-col min-w-96 items-center justify-center"
+    imageBox: "flex flex-col min-w-96 lg:min-w-[30vw] items-center justify-center"
 }

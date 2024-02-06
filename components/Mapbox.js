@@ -35,7 +35,6 @@ function MapboxMap({latitude, longitude}) {
     const [loaded, setLoaded] = useState(true)
     const [imported, setImported] = useState(false)
     const [markerData, setMarkerData] = useState([])
-
    
 
   useEffect(() => {
@@ -115,11 +114,13 @@ function MapboxMap({latitude, longitude}) {
     }
 
 return (
-<>
-   <div ref={mapNode} style={{width: "100%", height: "100%" }}/>
+    <>
+    
+   <div ref={mapNode} style={{width: "100%", height: "100%" }}></div> 
                 
-   
-                </>
+    </>
+               
+    
     )
 
 }

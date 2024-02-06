@@ -63,7 +63,7 @@ export default function Events() {
                 {notRobot ?
                 <>
                <a href='mailto:johndoe@fakeemail.com'><div><u>jack@dickhead.com</u> (Promoters and Venues)</div></a>
-               <div onClick={()=>setDemoForm(true)}><u>Submit music</u></div>
+               <div onClick={()=>setDemoForm(!demoForm)}><u>Submit music</u></div>
 
                 </>
                 :
@@ -81,7 +81,7 @@ export default function Events() {
 
             </div>
             {width > 700 ? 
-            <div className="flex pl-5 text-l align-center w-1/4  h-[40vh] border-l-black border-l">
+            <div className="flex pl-5 text-l align-center w-1/4  h-[55vh] border-l-black border-l">
                 <div className="flex gap-2 flex-col w-1/2">
                     <div>Mon-Friday</div> 
                     <div>Weekends</div>

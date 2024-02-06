@@ -12,7 +12,7 @@ const thegreatclub = `<html>
 	// see the following example for reference
 	// const event_filter=["-ca91a3a7-237f-482b-a394-c8daf3d54e87","-49d16b9b-e87b-4be7-9387-4012dfbcb208","-4e0e3f23-dcd5-435e-bda7-87e25aaba49e"]
 	
-	const event_filter=[""]
+	const event_filter=''
 
 	// Venue Filtering Instructions
 	// venue filters must use the exact spelling of the venue name as seen on the oztix purchase page.
@@ -23,7 +23,7 @@ const thegreatclub = `<html>
 	// see the following example for reference
 	// const venue_filter='Venue.Name:"Waywards (The Bank Hotel)" OR Venue.Name:"Paddo Lounge (Paddington RSL)"'
 
-	const venue_filter='Venue.Name:"The Great Club" OR Venue.Name:"Yia Yia\'s"'
+	const venue_filter='Venue.Name:"The Great Club"'
 </script>
 
 <!-- un-comment the below block to remove the search bar from the top of the page -->
@@ -47,7 +47,7 @@ const thegreatclub = `<html>
     <script src="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script> 
     <script src="//www.oztix.com.au/js/moment.min.js"></script> 
     <script src="//www.oztix.com.au/js/moment-timezone-with-data.min.js"></script>
-    <input id="eventsearchbar" name="q" placeholder="Search for events" style="width: 100%;" />
+    <input id="eventsearchbar" name="q" placeholder="Search for events" style="display:none" />
     <div class="entries">
       <div class="container-fluid">
         <div class="row">
@@ -55,17 +55,17 @@ const thegreatclub = `<html>
             <aside class="event-guide-filter">
               <div id="clear-all"></div>
               <section class="facet-wrapper">
-                <div class="facet-category-title">Refine by</div>
+                <div class="facet-category-title" style="display:none">Refine by</div>
                 <!-- comment out the below line to remove STATE from the refine by section -->
-                <!-- <div id="state" class="facet"></div> -->
+                <!-- <div id="state" class="facet" style="display:none"></div> -->
                 <!-- comment out the below line to remove VENUE from the refine by section -->
-                <div id="venue" class="facet"></div>
+                <div id="venue" class="facet" style="display:none"></div>
                 <!-- comment out the below line to remove BAND from the refine by section -->
-                <div id="band" class="facet"></div>
+                <div id="band" class="facet" style="display:none"></div>
                 <!-- comment out the below line to remove TOUR from the refine by section -->
-                <!-- <div id="eventtour" class="facet"></div> -->
+                <!-- <div id="eventtour" class="facet" style="display:none"></div> -->
                 <!-- comment out the below line to remove CATEGORIES from the refine by section -->
-                <div id="categories" class="facet"></div>
+                <div id="categories" class="facet" style="display:none"></div>
               </section>
             </aside>
           </div>
@@ -90,7 +90,7 @@ const thegreatclub = `<html>
             numberLocale: 'en-US',
             urlSync: {
                 useHash: false,
-                trackedParameters: ['query', 'attribute:*', 'page', 'hitsPerPage']
+                trackedParameters: ['']
 			},
             searchParameters: {
 				filters:venue_filter,	
@@ -110,15 +110,15 @@ const thegreatclub = `<html>
 		});
 
 // if the search bar is not required please remove the below block
-	search.addWidget(
-		instantsearch.widgets.searchBox({
-			container: '#eventsearchbar',
-			placeholder: 'Search for events',
-			autofocus: false,
-			poweredBy: false,
-			searchOnEnterKeyPressOnly: false
-		})
-	);
+	// search.addWidget(
+	// 	instantsearch.widgets.searchBox({
+	// 		container: '#eventsearchbar',
+	// 		placeholder: 'Search for events',
+	// 		autofocus: false,
+	// 		poweredBy: false,
+	// 		searchOnEnterKeyPressOnly: false
+	// 	})
+	// );
 
 	var hitTemplate =
 		'<article class="hit">' +

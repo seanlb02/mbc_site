@@ -21,7 +21,7 @@ export default function Venues() {
     return (
 
 
-        <div className="cursor-crosshair">
+        <div className="cursor-crosshair no-scrollbar">
             {width > 700 ? <Navbar/> : <MobileNavbar/>}
             <VenueSlider/>
         </div>

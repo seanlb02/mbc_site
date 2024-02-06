@@ -77,31 +77,8 @@ function MapboxMap({latitude, longitude}) {
     },[lat, lng])
   
     useEffect(() => {
-        if(imported){
-            mapp.current.on('load', () => {
-              mapp.current.addSource('my_data', {
-              type: 'vector',
-           
-              url: 'mapbox://sean123456789.an6v1uiq'
-              });
-              mapp.current.addLayer(
-              {
-              'id': 'sean123456789.an6v1uiq',
-              'type': 'line',
-              'source': 'my_data',
-              'source-layer': 'Line_Notes_2-580doi',
-              'layout': {
-              'line-join': 'round',
-              'line-cap': 'round'
-              },
-              'paint': {
-              'line-color': '#ff69b4',
-              'line-width': 2
-              }
-              },
-              );
-              })};
-    }, [imported])
+       
+    }, [])
 
   const reCenter = function() {
     console.log("flying")

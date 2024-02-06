@@ -19,22 +19,6 @@ import MapboxMap from './Mapbox';
 
 
 
-const testResource = {
-    type: "Feature",
-    geometry: {
-        type: "Point",
-        coordinates: [151.17835, -33.91318]
-    },
-    properties: {
-        username: "user1",
-        is_ent: false,
-        text: "This is the first note ever to be writen on this app",
-        category: "nothing",
-        timestamp: Date.now(),
-        likes: [{username: "Jane"}, {username: "John"}]
-    }
-
-}
 
 
 

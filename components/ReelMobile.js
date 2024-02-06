@@ -59,10 +59,6 @@ const [genreProp, setGenreProp] = useState("")
                                     <Algo genre={genreProp}/>
                                 </div>
                     </div> 
-                    <div className="p-2 border-4 border-black bg-white h-fit relative">   
-                        <iframe  src="https://open.spotify.com/embed/playlist/0rTCBABs8clQ8CsLqL3da2?utm_source=generator" width={500} height={352} frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        
-                    </div>
                     
                     
                     </div>

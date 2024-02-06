@@ -26,7 +26,7 @@ export default function MobileNavbar() {
                     <a className="flex w-2/5 pl-4 py-3" href="/shows">Whats on</a>
                     <div className="flex  pl-4 py-3" onClick={()=> Router.push('/festivals')}>Festivals</div>
                     <div className="flex pl-4 py-3" onClick={()=> Router.push('/services')}>Booze</div>
-                    <a><div className="flex  pl-4 py-3" onClick={()=> Router.push('/venues')}>Venues</div></a>
+                    <a className="text-black flex w-1/5 pl-4 py-3" href='/venues'>Venues</a>
                     <div className="flex pl-4 py-3" onClick={()=> Router.push('/contact')}>Contact</div>
 
                 </div>

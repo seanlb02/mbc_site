@@ -327,6 +327,6 @@ const thegreatclub = `<html>
   </div>
   <!-- END ALGOLIA -->
 </body>
-</html>`
+</html>`;
 
-export default thegreatclub
+export default thegreatclub;

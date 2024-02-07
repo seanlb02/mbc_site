@@ -314,7 +314,6 @@ const htmlString = `<html>
       </div>
       <!-- END ALGOLIA -->
     </body>
-    </html>`
+    </html>`;
 
-
-export default htmlString 
+export default htmlString;

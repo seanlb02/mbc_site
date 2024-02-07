@@ -1,4 +1,3 @@
-
 const chippo = `<html>
 
 <head>
@@ -656,6 +655,6 @@ const chippo = `<html>
 
 </body>
 
-</html>`
+</html>`;
 
-export default chippo
+export default chippo;

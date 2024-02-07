@@ -1,4 +1,3 @@
-
 const waywards = `<html>
 
 <head>
@@ -661,6 +660,6 @@ const waywards = `<html>
 
 </body>
 
-</html>`
+</html>`;
 
-export default waywards
+export default waywards;

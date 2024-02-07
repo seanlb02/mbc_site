@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.left-panel { float: left; margin-top: 1em; width: 250px; }
-.right-panel { margin-left: 260px; }
+.left-panel {
+  float: left;
+  margin-top: 1em;
+  width: 250px;
+}
+.right-panel {
+  margin-left: 260px;
+}
 
 @layer utilities {
   /* Chrome, Safari and Opera */
@@ -18,8 +24,8 @@
 }
 
 a {
-color:black;
-text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 :root {
@@ -36,20 +42,18 @@ text-decoration: none;
   }
 }
 
-
 @keyframes slidein {
   0% {
     transform: translateX(-50%);
-}
+  }
 
-50% {
-  transform: translateX(10%);
-}
+  50% {
+    transform: translateX(10%);
+  }
 
-100% {
-  transform: translateX(-50%)
-}
-
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .mapboxgl-ctrl-logo {
@@ -69,11 +73,19 @@ video {
 }
 
 #contrastText {
-  color: white; 
+  color: white;
   mix-blend-mode: difference;
 }
 
 #contrastTextBlack {
-  color: black; 
+  color: black;
   mix-blend-mode: difference;
+}
+
+#unselectable {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }

@@ -1,4 +1,3 @@
-
 const bootleggers = `<html>
 <head>
 <link rel="stylesheet" href="https://oztix.s3.amazonaws.com/outlet_additional_files/2018-Algolia/algolia_events.css" />
@@ -328,6 +327,6 @@ const bootleggers = `<html>
   </div>
   <!-- END ALGOLIA -->
 </body>
-</html>`
+</html>`;
 
-export default bootleggers
+export default bootleggers;

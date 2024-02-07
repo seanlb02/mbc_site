@@ -66,7 +66,7 @@ export default function Home() {
             {width < 700 ? (
               <div
                 id="cube"
-                className="flex flex-row max-h-42  bg-white z-40 bottom-16 left-0 right-0 text-center absolute mb-2 mx-10 lg:mt-12 pb-5 pt-1 px-2 border border-black text-center text-xs"
+                className="flex flex-row max-h-42  bg-white z-40 bottom-36 mb-10 left-0 right-0 text-center absolute mb-2 mx-10 lg:mt-12 pb-5 pt-1 px-2 border border-black text-center text-xs"
               >
                 {fade ? (
                   <div

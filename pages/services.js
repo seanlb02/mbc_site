@@ -85,7 +85,7 @@ export default function Events() {
           because we live it. We work with an array of businesses from 
           </div> : <></>}
         </div>
-        <div className="lg:m-2 ml-10 mr-7 lg:ml-0 text-l lg:text-2xl text-left">
+        <div  className="lg:m-2  ml-10 mr-7 lg:ml-0 text-l lg:text-2xl text-left">
             {width < 700 ? <div  className="lg:text-2xl z-30 text-black flex flex-col p-0 lg:pl-5 flex pb-0 bg-transparent h-full mt-auto"
           >
            
@@ -109,8 +109,7 @@ export default function Events() {
         Our Friends
       </heading>
       { width < 700 ? <div className="lg:m-12 ml-10 mr-7 mb-10 lg:text-2xl">
-      We work with a number of clients across Australia in a variety of ways from festival
-        programming to hospitality solutions. Check out some of our mates below.
+      <></>
       </div> : <></>}
       <div className="flex w-full h-[50vh] mr-10 justify-center mb-24">
         <Image

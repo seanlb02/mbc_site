@@ -113,7 +113,7 @@ export default function Reel() {
                   <div className="top-20 z-30  h-full px-3 lg:w-fit w-full pb-3 border-black bg-white lg:border-4 overflow-y-scroll overflow-x-hidden no-scrollbar">
                     {width > 700 ? (
                       <div className="sticky top-0 right-0 pr-2 h-6 pt-1 z-20 bg-white text-black items-right h-fit w-full align-right text-xs text-right">
-                        [drag me]{" "}
+                        [drag me (here)]{" "}
                       </div>
                     ) : (
                       <></>
@@ -126,7 +126,7 @@ export default function Reel() {
                 <Draggable>
                   <div className="top-20 z-30  h-full px-3 w-fit mt-0 pb-3 border-black bg-white border-4 overflow-y-scroll overflow-x-hidden no-scrollbar">
                     <div className="sticky top-0 right-0 pr-2 h-6 pt-1 z-20 bg-white text-black items-right h-fit w-full align-right text-xs text-right">
-                      [drag me]{" "}
+                      [drag me (here)]{" "}
                     </div>
                     <Algo genre={genreProp} />
                   </div>

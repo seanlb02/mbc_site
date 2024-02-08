@@ -46,7 +46,7 @@ const htmlString = `<html>
         <script src="//www.oztix.com.au/js/moment-timezone-with-data.min.js"></script>
         <input id="eventsearchbar" name="q" placeholder="Search for events" style="display:none" />
         <div class="entries" >
-          <div class="container-fluid" style="">
+          <div style="">
             <div class="grid-container">
               <div class="grid-item filter-wrap" style="">
                 <aside class="event-guide-filter">
@@ -66,10 +66,10 @@ const htmlString = `<html>
                 </aside>
               </div>
               <div class="event-wrap">
-                <div class="results-wrapper"  style="">
-                  <main id="event-guide-hits" style="" class="clearfix ">
+                <div class="results-wrapper"  >
+                  <main id="event-guide-hits" style=";" class="clearfix ">
                   </main>
-                  <section id="pagination"></section>
+                  <section id="pagination" style="display:none"></section>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ const htmlString = `<html>
    
     
         var hitTemplate =
-            '<article class="hit" style="">' +
+            '<article class="hit" style:"">' +
             '<a href="{{EventUrl}}"  target="_blank" class="clearfix" >' +
             '<div class="product-picture-wrapper no-pad-left col-xs-4 col-sm-12 " >' +
             '<div class="product-picture"><img src="{{EventImage1}}" alt="{{EventNameClean}}" /></div>' +
@@ -118,7 +118,7 @@ const htmlString = `<html>
             '<div class="product-desc-wrapper no-pad-left col-xs-7 col-sm-12">' +
             '<div class="product-desc-container clearfix">' +
             '<div class="product-date no-pad-left hidden-xs col-sm-2 col-md-3 col-lg-2">' +
-            '<div class="product-date-container">' +
+            '<div class="product-date-container" style="display:none">' +
             '<span class="day">{{DateStartPart.Day}}</span>' +
             '<span class="date">{{DateStartPart.Date}}</span>' +
             '<span class="month">{{DateStartPart.Month}}</span>' +
@@ -134,7 +134,7 @@ const htmlString = `<html>
             '</div>' +
             '</div>' +
             '</div>' +
-            '<div class="event-arrow no-pad col-xs-1 visible-xs"><em class="fa fa-angle-right"></em></div>' +
+            '<div class="event-arrow no-pad col-xs-1 visible-xs" style="display:none"><em class="fa fa-angle-right"></em></div>' +
             '</a>' +
             '</article>';
     
@@ -162,6 +162,7 @@ const htmlString = `<html>
                 container: '#event-guide-hits',
                 cssClasses: {
                     item: 'event-container ',
+                    
                 },
                 hitsPerPage: 20,
                 templates: {

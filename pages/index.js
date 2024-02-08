@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import { useEffect, useState } from "react";
 import MobileNavbar from "@/components/MobileNavbar";
 import MenuButton from "@/components/MenuButton";
+import DraggableImg from "@/components/DraggableImg";
+import Draggable from "react-draggable";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,15 +35,29 @@ export default function Home() {
   return (
     <main className={styles.pageContainer}>
       <div className="relative h-[100vh] w-[100vw] ">
+        
         <video
           autoplay="autoplay"
           muted
           loop
           className="absolute z-0 h-[100vh] lg:h-[172vh] w-[100vw] flex flex-col"
         >
+          
           {" "}
           <source src="/badbrains.mp4" type="video/mp4" />{" "}
         </video>
+       
+          {width > 1000 ? <div className="flex absolute gap-4 justify-center items-end pb-28 z-48 lg:h-[150vh] w-[100vw] ">
+          <Draggable><div className="flex z-50 text-white border max-h-[35vh] max-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
+          <Draggable><div className="flex z-50 text-white border max-h-[35vh] max-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
+          <Draggable><div className="flex z-50 text-white border max-h-[35vh] max-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
+
+          
+          </div>
+          :
+          <></>}
+        
+        {width > 700 ? <div className="fixed left-24 bottom-10 text-xl h-fit w-fit text-white z-25">&darr;&darr;&darr;</div> : <></>}
         {rearrange ? (
           <div className="flex flex-col h-full absolute z-2">
             <Hero className=" " />
@@ -52,13 +68,12 @@ export default function Home() {
             )}
             {width < 700 ? (
               <div className="absolute z-0 h-[70vh] lg:h-[100vh] w-[100vw] flex justify-center items-center align-center">
-                <Image
-                  priority={true}
-                  loading="eager"
+                <img
+                  
                   height={1000}
                   width={2000}
                   src="/white_spin_logo.gif"
-                ></Image>
+                ></img>
               </div>
             ) : (
               <></>

@@ -135,7 +135,7 @@ export default function Reel() {
             </div>
             {width > 700 ? (
               <Draggable>
-                <div className="lg:p-2 lg:border-4 border-black bg-white h-full w-[50wv] relative cursor-move">
+                <div className="lg:p-2 lg:border-4 border-black bg-white h-fit w-[50wv] relative cursor-move">
                   <div className="absolute top-0 z-20 bg-transparent h-36 w-full">
                     {" "}
                   </div>

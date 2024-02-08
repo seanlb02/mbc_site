@@ -57,9 +57,9 @@ export default function Listing({ name, artist, label, logo, location, date }) {
         {images.map((el) => (
           <div className={styles.imageBox}>
             <Image
-              src="/band.jpg"
-              width={100}
-              height={100}
+              src="/badfridaycrowd.jpg"
+              width={1000}
+              height={1000}
               className="h-full w-full"
             ></Image>
           </div>

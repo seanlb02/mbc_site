@@ -46,7 +46,7 @@ export default function Shows() {
             autoplay="autoplay"
             muted
             loop
-            className="absolute top-0 z-0 h-[130vh] w-[100vw] flex flex-col"
+            className="absolute top-0 z-2 h-[125vh] w-[100vw] flex flex-col"
           >
             {" "}
             <source src="/badbrains.mp4" type="video/mp4" />{" "}
@@ -55,7 +55,7 @@ export default function Shows() {
 
         {rearrange ? (
           <div className="flex flex-col absolute z-2">
-            <Hero className="z-0 w-full top-0 " />
+            <Hero className="z-0 w-full " />
             <Navbar className="z-10 bg-transparent" />
             <Reel onClick={() => setRearrange(false)} />
           </div>

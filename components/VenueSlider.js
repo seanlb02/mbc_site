@@ -65,24 +65,24 @@ export default function VenueSlider() {
       ) : (
         <></>
       )}
-      <div className="flex h-[100vh] w-[100vw] z-0 font-mono">
-        <div className="flex flex-col cursor-s-resize  lg:border-l border-l-black overflow-y-scroll no-scrollbar mx-5 bg-white lg:h-[100vh] h-fit lg:w-3/4 w-full z-0 lg:ml-10 lg:animate-blurin items-center">
+      <div className="flex h-fit w-[100vw] z-0 font-mono">
+        <div className="flex flex-col cursor-s-resize  overflow-y-scroll no-scrollbar mx-5 bg-white lg:h-[100vh] h-fit lg:w-3/4 w-full z-0 lg:ml-10 lg:animate-blurin items-center">
           <div className="flex flex-col h-fit bg-white  lg:ml-5 lg:mr-5 m-0 z-0 ">
             <div className="flex text-2xl lg:text-5xl h-fit w-full ml-0 lg:ml-5 lg:mt-10 md:mt-10 md:text-3xl">
               {venueSpotlight}
             </div>
             {venueSpotlight == "We pair music with venues like no one else." ? (
               <div className="flex h-[50vh] w-full flex justify-center items-center">
-                <Image
-                  priority={true}
-                  loading="eager"
+                <img
+                 
                   height={500}
                   width={1000}
                   src="/white_spin_logo.gif"
-                ></Image>
+                ></img>
               </div>
             ) : (
               <div className="flex-col w-full lg:flex lg:flex-row mt-5 lg:mt-0 items-center lg:align-center lg:mb-10 lg:mt-10 ">
+                <div className="fixed left-24 bottom-5 text-xl h-fit w-fit text-black z-25">&darr;&darr;&darr;</div>
                 <div className="flex lg:ml-3 flex-end mt-auto lg:h-[50vh] h-[35vh]  lg:w-1/2 w-full">
                   <Map
                     latitude={-33.89408834621491}
@@ -91,16 +91,15 @@ export default function VenueSlider() {
                 </div>
 
                 {width > 1300 ? (
-                  <Draggable>
-                    <Image
-                      priority={true}
-                      loading="eager"
+                 
+                    <img
+                      
                       className="flex flex-start lg:ml-auto lg:h-4/5 lg:w-2/5 w-full mb-5 mt-5 lg:m-10"
                       src={ven.images[venueSpotlight]}
                       height={300}
                       width={600}
-                    ></Image>
-                  </Draggable>
+                    ></img>
+                
                 ) : (
                   <Image
                     priority={true}
@@ -160,7 +159,7 @@ export default function VenueSlider() {
         {/* conditionally render top nav over side for mobile */}
 
         {width > 700 ? (
-          <div className="flex bg-white border-r border-r-black animate-blurinslow z-0 w-1/4 h-full mr-10  gap-5 flex-col p-12">
+          <div className="flex bg-white  animate-blurinslow z-0 w-1/4 h-full mr-10  gap-5 flex-col p-12">
             {venues.map((el) => (
               <div
                 className="text-md hover:text-slate-500"

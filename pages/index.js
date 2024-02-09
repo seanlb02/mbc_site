@@ -45,16 +45,28 @@ export default function Home() {
                   src="/white_spin_logo.gif"
                 ></Image>
               </div>
-        <video
+        {rearrange ? <video
           autoplay="autoplay"
           muted
           loop
-          className="absolute z-1 h-[100vh] lg:h-[172vh] w-[100vw] flex flex-col"
+          className="absolute z-1 h-[100vh] lg:h-[100vh] w-[100vw] flex flex-col"
         >
           
           {" "}
           <source src="/badbrains.mp4" type="video/mp4" />{" "}
-        </video>
+        </video> : 
+        <video
+        autoplay="autoplay"
+        muted
+        loop
+        className="absolute z-1 h-[100vh] lg:h-[172vh] w-[100vw] flex flex-col"
+      >
+        
+        {" "}
+        <source src="/badbrains.mp4" type="video/mp4" />{" "}
+      </video>
+        
+        }
 
         {/* load spinning logo on render */}
 
@@ -151,7 +163,7 @@ export default function Home() {
                         </Image>
                     </div>
                     <div className="w-[100vw] h-fit flex-col flex items-center ">
-                        <div className="flex flex-row border border-red-500 mb-4 gap-4 overflow-x-scroll border-r no-scrollbar w-[95vw] justify-start z-30 lg:h-fit hover:cursor-e-resize">
+                        <div className="flex flex-row border-l mb-4 gap-4 overflow-x-scroll border-r no-scrollbar w-[95vw] justify-start z-30 lg:h-fit hover:cursor-e-resize">
                           <Draggable disabled={true}><div className="flex animate-left1 z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
                           <Draggable disabled={true}><div className="flex animate-left1 z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
                           <Draggable disabled={true}><div className="flex animate-left1 z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
@@ -159,7 +171,7 @@ export default function Home() {
                           <Draggable disabled={true}><div className="flex animate-left1 z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
                           <Draggable disabled={true}><div className="flex animate-left1 z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
                         </div>
-                        <div className="flex flex-row  mb-4 gap-4 overflow-x-scroll border-r no-scrollbar w-[95vw] justify-start z-30 lg:h-fit hover:cursor-e-resize">
+                        <div className="flex flex-row border-l mb-4 gap-4 overflow-x-scroll border-r no-scrollbar w-[95vw] justify-start z-30 lg:h-fit hover:cursor-e-resize">
                           <Draggable disabled={true}><div className="flex animate-rightslow z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
                           <Draggable disabled={true}><div className="flex animate-rightslow z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
                           <Draggable disabled={true}><div className="flex animate-rightslow z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
@@ -167,7 +179,7 @@ export default function Home() {
                           <Draggable disabled={true}><div className="flex animate-rightslow z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
                           <Draggable disabled={true}><div className="flex animate-rightslow z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
                         </div>
-                        <div className="flex flex-row  mb-4 gap-4 overflow-x-scroll border-r no-scrollbar w-[95vw] justify-start z-30 lg:h-fit hover:cursor-e-resize">
+                        <div className="flex flex-row border-l mb-4 gap-4 overflow-x-scroll border-r no-scrollbar w-[95vw] justify-start z-30 lg:h-fit hover:cursor-e-resize">
                           <Draggable disabled={true}><div className="flex animate-left z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
                           <Draggable disabled={true}><div className="flex animate-left z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
                           <Draggable disabled={true}><div className="flex animate-left z-50 text-white border max-h-[35vh] min-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>

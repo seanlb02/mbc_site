@@ -36,9 +36,9 @@ module.exports = {
       },
       animation: {
         down: "down 450ms ease-in",
-        left: "left 13s linear infinite",
-        left1: "left 10s linear infinite",
-        rightslow: "right 17s linear infinite",
+        left: "left 20s linear infinite",
+        left1: "left 25s linear infinite",
+        rightslow: "right 21s linear infinite",
         fadein: "fadein 900ms ease-in",
         fadeout: "fadeout 900ms ease-in",
         blurin: "blurin 800ms ease-out",

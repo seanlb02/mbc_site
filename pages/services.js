@@ -105,7 +105,7 @@ export default function Events() {
         </div>
       </div>
 
-      <heading className="lg:text-5xl text-4xl lg:m-10 m-10 text-left mr-auto mb-6 lg:mb-10">
+      <heading className="lg:text-5xl text-4xl lg:m-10 m-10 text-left mr-auto mb-0 lg:mb-10">
         Our Friends
       </heading>
       { width < 700 ? <div className="lg:m-12 ml-10 mr-7 mb-10 lg:text-2xl">

@@ -14,8 +14,12 @@ module.exports = {
           "100%": { transform: "translateY(0%)" },
         },
         left: {
-          "0%": { transform: "translateX(100%)" },
+          "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0%)" },
+        },
+        right: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
         fadein: {
           "0%": { opacity: 0 },
@@ -32,8 +36,9 @@ module.exports = {
       },
       animation: {
         down: "down 450ms ease-in",
-        left: "left 450ms ease-in",
-        left1: "left 900ms ease-in-out",
+        left: "left 13s linear infinite",
+        left1: "left 10s linear infinite",
+        rightslow: "right 17s linear infinite",
         fadein: "fadein 900ms ease-in",
         fadeout: "fadeout 900ms ease-in",
         blurin: "blurin 800ms ease-out",

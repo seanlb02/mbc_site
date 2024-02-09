@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"/>
         <title>MBC</title>
         <link rel="icon" type="image/x-icon" href="/mbc_small.png"></link>
         <link

@@ -60,11 +60,11 @@ export default function Reel() {
   ];
 
   return (
-    <div className="relative sticky top-24 z-30  justify-center w-[100vw] h-[118vh] flex flex-col items-center bg-transparent font-mono">
+    <div className="relative sticky top-24 z-30  justify-center w-[100vw] h-fit lg:h-[118vh] flex flex-col items-center bg-transparent font-mono">
       <div className="flex flex-col items-center h-fit max-w-[100vw] top-0 mx-10 bg-transparent">
-        <div className=" flex flex-col mb-12 items-center w-[100vw] h-[80vh] bg-transparent">
+        <div className=" flex flex-col mb-12 items-center w-[100vw]  lg:h-[80vh] bg-transparent">
           {width > 700 ? (
-            <div className="flex mt-5 gap-2 w-[100vw] justify-center pt-4 word-wrap flex-wrap">
+            <div className="flex mt-5 gap-2 w-[100vw] h-[50vh] justify-center pt-4 word-wrap flex-wrap">
               {genres.map((el) => (
                 <>
                   <a
@@ -94,7 +94,7 @@ export default function Reel() {
                 <></>
               )}
               {width < 800 && genreShow ? (
-                <div className="flex bg-white border pb-1 border-black px-16 m-5 mt-3 z-0 h-36 flex-col items-center overflow-y-scroll no-scrollbar">
+                <div className="flex bg-white  pb-1  px-16 m-5 mt-3 z-0 h-36 flex-col items-center overflow-y-scroll no-scrollbar">
                   {genres.map((el) => (
                     <a
                       id="contrastText"
@@ -110,7 +110,7 @@ export default function Reel() {
               )}
               {width < 700 ? (
                 <Draggable disabled="true">
-                  <div className="top-20 z-30  h-full px-3 lg:w-fit w-full pb-3 border-black bg-white lg:border-4 overflow-y-scroll overflow-x-hidden no-scrollbar">
+                  <div className="top-20 z-30 min-h-[100vh] px-3 lg:w-fit w-full pb-3 border-black bg-white lg:border-4 overflow-y-scroll overflow-x-hidden no-scrollbar">
                     {width > 700 ? (
                       <div className="sticky top-0 right-0 pr-2 h-6 pt-1 z-20 bg-white text-black items-right h-fit w-full align-right text-xs text-right">
                         [drag me (here)]{" "}

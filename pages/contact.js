@@ -51,7 +51,7 @@ export default function Events() {
 
       <heading className="text-4xl lg:text-5xl m-8 lg:m-10">Contact</heading>
 
-      <div className="m-11 flex text-justify">
+      <div className="m-11 mb-16 flex text-justify">
         <div className="flex flex-col text-l lg:w-3/4 w-4/4 overflow-y-scroll no-scrollbar">
           <div>(02) 9519 4826</div>
           <div>161 Princess Highway, St. Peters</div>
@@ -90,7 +90,7 @@ export default function Events() {
           </div>
         </div>
         {width > 700 ? (
-          <div className="flex pl-5 text-l align-center w-1/4  h-[55vh] border-l-black border-l">
+          <div className="flex pl-5 text-l align-center w-1/4  h-[55vh] ">
             <div className="flex gap-2 flex-col w-1/2">
               <div>Mon-Friday</div>
               <div>Weekends</div>
@@ -105,7 +105,7 @@ export default function Events() {
         )}
       </div>
 
-      <Hero />
+      
     </main>
   );
 }

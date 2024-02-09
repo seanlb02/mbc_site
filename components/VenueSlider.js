@@ -67,7 +67,7 @@ export default function VenueSlider() {
       )}
       <div className="flex h-fit w-[100vw] z-0 font-mono">
         <div className="flex flex-col cursor-s-resize  overflow-y-scroll no-scrollbar mx-5 bg-white lg:max-h-[100vh] h-fit lg:w-3/4 w-full z-0 lg:ml-10 lg:animate-blurin items-center">
-          <div className="flex flex-col h-fit bg-white  lg:ml-5 lg:mr-5 m-0 z-0 ">
+          <div className="flex flex-col h-[fit] bg-white  lg:ml-5 lg:mr-5 m-0 z-0 ">
             <div className="flex text-2xl lg:text-5xl h-fit w-full ml-0 lg:ml-5 lg:mt-10 md:mt-10 md:text-3xl">
               {venueSpotlight}
             </div>

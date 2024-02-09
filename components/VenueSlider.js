@@ -45,7 +45,7 @@ export default function VenueSlider() {
   return (
     <div className="h-[100vh] no-scrollbar">
       {width < 700 ? (
-        <div className="font-mono no-scrollbar flex bg-white md:px-0 mg:mx-0 z-20 w-[100vw] h-fit lg:h-full mr-10 pt-5  gap-5 flex-col p-5 lg:p-12">
+        <div className="font-mono no-scrollbar flex bg-white md:px-0 mg:mx-0 z-20 w-[100vw] h-full lg:h-full mr-10 pt-5  gap-5 flex-col p-5 lg:p-12">
           <div className="text-sm" onClick={() => setDropNavShow(!dropNavShow)}>
             [Select venue]
           </div>
@@ -66,13 +66,13 @@ export default function VenueSlider() {
         <></>
       )}
       <div className="flex h-fit w-[100vw] z-0 font-mono">
-        <div className="flex flex-col cursor-s-resize  overflow-y-scroll no-scrollbar mx-5 bg-white lg:h-[100vh] h-fit lg:w-3/4 w-full z-0 lg:ml-10 lg:animate-blurin items-center">
+        <div className="flex flex-col cursor-s-resize  overflow-y-scroll no-scrollbar mx-5 bg-white lg:max-h-[100vh] h-fit lg:w-3/4 w-full z-0 lg:ml-10 lg:animate-blurin items-center">
           <div className="flex flex-col h-fit bg-white  lg:ml-5 lg:mr-5 m-0 z-0 ">
             <div className="flex text-2xl lg:text-5xl h-fit w-full ml-0 lg:ml-5 lg:mt-10 md:mt-10 md:text-3xl">
               {venueSpotlight}
             </div>
             {venueSpotlight == "We pair music with venues like no one else." ? (
-              <div className="flex h-[50vh] w-full flex justify-center items-center">
+              <div className="flex h-[30vh] w-full justify-center items-center">
                 <img
                  
                   height={500}

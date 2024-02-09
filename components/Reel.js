@@ -60,15 +60,15 @@ export default function Reel() {
   ];
 
   return (
-    <div className="relative sticky top-16 z-30  justify-center w-[100vw] flex flex-col items-center bg-transparent font-mono">
-      <div className="flex flex-col items-center  max-w-[100vw] top-0 mx-10 bg-transparent">
-        <div className=" flex flex-col items-center w-[100vw] h-fit bg-transparent">
+    <div className="relative sticky top-24 z-30  justify-center w-[100vw] h-[118vh] flex flex-col items-center bg-transparent font-mono">
+      <div className="flex flex-col items-center h-fit max-w-[100vw] top-0 mx-10 bg-transparent">
+        <div className=" flex flex-col mb-12 items-center w-[100vw] h-[80vh] bg-transparent">
           {width > 700 ? (
-            <div className="flex gap-2 w-[100vw] justify-center pt-4 word-wrap flex-wrap">
+            <div className="flex mt-5 gap-2 w-[100vw] justify-center pt-4 word-wrap flex-wrap">
               {genres.map((el) => (
                 <>
                   <a
-                    id="contrastText"
+                    // id="contrastTextBlack"
                     className="flex z-50  w-fit text-sm hover:translate-y-2 py-1 "
                     href={`/shows?q=&hPP=20&p=0&dFR[Categories][0]=${el}&is_v=1`}
                     onClick={() => updateProp(el)}
@@ -82,7 +82,7 @@ export default function Reel() {
             <></>
           )}
           <div className="flex flex-col w-[100vw] lg:flex-row">
-            <div className=" cursor-move flex flex-col items-center h-[75vh] w-[100vw] bg-transparent">
+            <div className=" cursor-move  flex flex-col items-center h-[75vh] w-[100vw] bg-transparent">
               {width < 800 ? (
                 <div
                   className="mx-3 mt-2 mb-4 text-sm"
@@ -124,7 +124,7 @@ export default function Reel() {
                 </Draggable>
               ) : (
                 <Draggable>
-                  <div className="top-20 z-30  h-full px-3 w-fit mt-0 pb-3 border-black bg-white border-4 overflow-y-scroll overflow-x-hidden no-scrollbar">
+                  <div className="top-20 z-30 mt-5 h-full px-3 w-fit mt-0 pb-3 border-black bg-white border-4 overflow-y-scroll overflow-x-hidden no-scrollbar">
                     <div className="sticky top-0 right-0 pr-2 h-6 pt-1 z-20 bg-white text-black items-right h-fit w-full align-right text-xs text-right">
                       [drag me (here)]{" "}
                     </div>
@@ -135,7 +135,7 @@ export default function Reel() {
             </div>
             {width > 700 ? (
               <Draggable>
-                <div className="lg:p-2 lg:border-4 border-black bg-white h-fit w-[50wv] relative cursor-move">
+                <div className="lg:p-2 mr-10 mt-10  lg:border-4 border-black bg-white h-fit  w-[50wv] relative cursor-move">
                   <div className="absolute top-0 z-20 bg-transparent h-36 w-full">
                     {" "}
                   </div>
@@ -152,7 +152,8 @@ export default function Reel() {
             )}
           </div>
         </div>
-        <Hero className="z-0 mt-10" />
+        <Hero className="z-0 mb-0 pt-10 mt-20" />
+        <div className="text-xs text-white -mb-2">All our shows occur on _____ land</div>
       </div>
     </div>
   );

@@ -131,14 +131,14 @@ const thegreatclub = `<html>
 		'<div class="product-desc-container clearfix">' +
 		'<div class="product-date no-pad-left hidden-xs col-sm-2 col-md-3 col-lg-2">' +
 		'<div class="product-date-container">' +
-		'<span class="day">{{DateStartPart.Day}}</span>' +
+		'<span style="display:none" class="day">{{DateStartPart.Day}}</span>' +
 		'<span class="date">{{DateStartPart.Date}}</span>' +
 		'<span class="month">{{DateStartPart.Month}}</span>' +
 		'</div>' +
 		'</div>' +
 		'<div class="product-desc col-sm-10 col-md-9 col-lg-10 no-pad-left">' +
 		'<div class="event-details">' +
-		'<span class="product-name">{{{_highlightResult.EventName.value}}}</span>' +
+		'<span class="product-name" style="display:none">{{{_highlightResult.EventName.value}}}</span>' +
         '<span class="product-type">{{{SpecialGuests}}}</span>' +
         '<span class="product-type">{{{_highlightResult.Venue.Name.value}}}</span>' +
 		// '<span class="product-city hidden-xs">{{{Venue.Locality}}}</span>' +
@@ -146,7 +146,7 @@ const thegreatclub = `<html>
 		'</div>' +
 		'</div>' +
 		'</div>' +
-		'<div class="event-arrow no-pad col-xs-1 visible-xs"><em class="fa fa-angle-right"></em></div>' +
+		'<div class="event-arrow no-pad col-xs-1" style="display:none"><em class="fa fa-angle-right" "></em></div>' +
 		'</a>' +
 		'</article>';
 

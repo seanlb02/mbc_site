@@ -7,6 +7,7 @@ import Reel from "@/components/Reel";
 import MobileNavbar from "@/components/MobileNavbar";
 import { useRouter } from "next/router";
 import ReelMobile from "@/components/ReelMobile";
+import NavbarFixed from "@/components/NavbarFixed";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,33 +39,33 @@ export default function Shows() {
 
   return (
     <main className={styles.pageContainer}>
-      <div className="relative h-[100vh] w-[100vw] ">
+      <div className="relative min-h-fit w-[100vw] ">
         {width < 700 ? (
           <></>
-        ) : (
-          <video
-            autoplay="autoplay"
-            muted
-            loop
-            className="absolute top-0 z-2 h-[125vh] w-[100vw] flex flex-col"
-          >
-            {" "}
-            <source src="/badbrains.mp4" type="video/mp4" />{" "}
-          </video>
+        ) : (<img className="absolute -top-5 bottom-0 z-2 h-[133vh] w-[100vw] flex flex-col" src='/badfridayhero.jpg'></img>
+          // <video
+          //   autoplay="autoplay"
+          //   muted
+          //   loop
+          //   className="absolute top-0 z-2 h-[125vh] w-[100vw] flex flex-col"
+          // >
+          //   {" "}
+          //   <source src="/badbrains.mp4" type="video/mp4" />{" "}
+          // </video>
         )}
 
         {rearrange ? (
           <div className="flex flex-col absolute z-2">
             <Hero className="z-0 w-full " />
-            <Navbar className="z-10 bg-transparent" />
+            <NavbarFixed className="z-10 bg-transparent" />
             <Reel onClick={() => setRearrange(false)} />
           </div>
         ) : (
-          <div className=" w-full h-[100vh]  z-2 ">
+          <div className=" w-full h-full  z-2 ">
             <div className="relative w-full h-[100vh]">
-              {width < 700 ? <MobileNavbar /> : <Navbar />}
+              {width < 700 ? <MobileNavbar /> : <NavbarFixed />}
               {/* <Navbar className="absolute z-50 bg-transparent"/> */}
-              <div className="flex flex-col">
+              <div className="flex flex-col mb-10">
                 <Reel />
               </div>
             </div>
@@ -76,5 +77,5 @@ export default function Shows() {
 }
 
 const styles = {
-  pageContainer: "h-[100vh] w-[100vw] cursor-crosshair font-mono",
+  pageContainer: " max-h-full w-[100vw] bg-white cursor-crosshair font-mono",
 };

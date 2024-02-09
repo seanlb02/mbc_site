@@ -14,7 +14,9 @@ export default function Home() {
   const [rearrange, setRearrange] = useState(true);
   const [fade, setFade] = useState(true);
 
-  const scrolly = () => setRearrange(false);
+  // const scrolly = () => setRearrange(false);
+  const scrolly = () => null;
+
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -35,17 +37,28 @@ export default function Home() {
   return (
     <main className={styles.pageContainer}>
       <div className="relative h-[100vh] w-[100vw] ">
-        
+      <div className="absolute z-0 h-[50vh] lg:h-[100vh] w-[100vw] flex justify-center items-center align-center">
+                <Image
+                  priority
+                  height={500}
+                  width={1000}
+                  src="/white_spin_logo.gif"
+                ></Image>
+              </div>
         <video
           autoplay="autoplay"
           muted
           loop
-          className="absolute z-0 h-[100vh] lg:h-[172vh] w-[100vw] flex flex-col"
+          className="absolute z-1 h-[100vh] lg:h-[172vh] w-[100vw] flex flex-col"
         >
           
           {" "}
           <source src="/badbrains.mp4" type="video/mp4" />{" "}
         </video>
+
+        {/* load spinning logo on render */}
+
+
        
           {width > 1000 ? <div className="flex absolute gap-4 justify-center items-end pb-28 z-48 lg:h-[150vh] w-[100vw] ">
           <Draggable><div className="flex z-50 text-white border max-h-[35vh] max-w-[25vw]"><div className="absolute top-0 text-right pt-1 pr-2 text-white h-16 cursor-move w-full">&#10021;</div><img src='/badfridaycrowd.jpg' height='300' width='1000'></img></div></Draggable>
@@ -57,7 +70,7 @@ export default function Home() {
           :
           <></>}
         
-        {width > 700 ? <div className="fixed left-24 bottom-10 text-xl h-fit w-fit text-white z-25">&darr;&darr;&darr;</div> : <></>}
+        {width > 700 ? <div className="flex flex-col">{ rearrange ? <div onClick={()=> setRearrange(false)} className="fixed left-24 bottom-16 text-sm h-fit w-fit text-white z-50">Enter</div> : <div onClick={()=> setRearrange(false)} className="fixed left-24 bottom-10 text-xl h-fit w-fit text-white z-50">&darr;&darr;&darr;</div>}</div> : <></>}
         {rearrange ? (
           <div className="flex flex-col h-full absolute z-2">
             <Hero className=" " />
@@ -121,7 +134,7 @@ export default function Home() {
               ) : (
                 <MenuButton />
               )}
-              <div className="absolute z-0 h-[50vh] lg:h-[100vh] w-[100vw] flex justify-center items-center align-center">
+              <div className="absolute z-56 h-[50vh] pb-10 lg:h-[100vh] w-[100vw] flex justify-center items-center">
                 <Image
                   priority
                   height={500}

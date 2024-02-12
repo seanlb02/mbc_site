@@ -5,7 +5,7 @@ import VenueSlider from "@/components/VenueSlider";
 import MobileNavbar from "@/components/MobileNavbar";
 
 export default function Venues() {
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(true);
   const handleResize = () => setWidth(window.innerWidth);
   useEffect(() => {
     handleResize();

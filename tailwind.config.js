@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 const { nextui } = require("@nextui-org/react");
 module.exports = {
+  corePlugins: {
+ 
+
+   textDecoration: false,
+  },
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",

@@ -50,7 +50,7 @@ export default function Navbar() {
 }
 
 const styles = {
-  NavContainer: "sticky top-5 w-[100vw] z-40 h-fit text-sm z-1 font-mono",
+  NavContainer: "sticky top-5 w-[100vw] z-45 h-fit text-sm z-1 font-mono",
   itemContainer:
     " bg-white border border-black flex align-start w-[100-vw] m-10 mt-3 mb-0 border h-fit",
 

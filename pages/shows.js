@@ -42,7 +42,7 @@ export default function Shows() {
       <div className="relative min-h-fit w-[100vw] ">
         {width < 700 ? (
           <></>
-        ) : (<img className="absolute -top-5 bottom-0 z-2 h-[133vh] w-[100vw] flex flex-col" src='/badfridayhero.jpg'></img>
+        ) : (<img className="absolute -top-5 bottom-0 z-2 h-[135vh] w-[100vw] flex flex-col" src='/badfridayhero.jpg'></img>
           // <video
           //   autoplay="autoplay"
           //   muted
@@ -57,7 +57,7 @@ export default function Shows() {
         {rearrange ? (
           <div className="flex flex-col absolute z-2">
             <Hero className="z-0 w-full " />
-            <NavbarFixed className="z-10 bg-transparent" />
+            <NavbarFixed className="z-50 bg-transparent" />
             <Reel onClick={() => setRearrange(false)} />
           </div>
         ) : (

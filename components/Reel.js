@@ -60,16 +60,16 @@ export default function Reel() {
   ];
 
   return (
-    <div className="relative sticky top-24 z-30  justify-center w-[100vw] h-fit lg:h-[118vh] flex flex-col items-center bg-transparent font-mono">
-      <div className="flex flex-col items-center h-fit max-w-[100vw] top-0 mx-10 bg-transparent">
+    <div className="relative   z-15 bottom-0 justify-center w-[100vw] h-fit lg:h-[120vh] flex flex-col items-center bg-transparent font-mono">
+      <div className="absolute flex flex-col items-center h-fit max-w-[100vw] top-0 mx-10 bg-transparent">
         <div className=" flex flex-col mb-12 items-center w-[100vw]  lg:h-[80vh] bg-transparent">
           {width > 700 ? (
-            <div className="flex mt-5 gap-2 w-[100vw] h-[50vh] justify-center pt-4 word-wrap flex-wrap">
+            <div className="flex  z-0 gap-2 w-[100vw] h-[55vh]  top-24 justify-center pt-4 word-wrap flex-wrap">
               {genres.map((el) => (
                 <>
                   <a
                     // id="contrastTextBlack"
-                    className="flex z-50  w-fit text-sm hover:translate-y-2 py-1 "
+                    className="flex z-0 h-fit hover:no-underline w-fit text-sm hover:translate-y-2 py-1 "
                     href={`/shows?q=&hPP=20&p=0&dFR[Categories][0]=${el}&is_v=1`}
                     onClick={() => updateProp(el)}
                   >
@@ -81,8 +81,8 @@ export default function Reel() {
           ) : (
             <></>
           )}
-          <div className="flex flex-col w-[100vw] lg:flex-row">
-            <div className=" cursor-move  flex flex-col items-center h-[75vh] w-[100vw] bg-transparent">
+          <div className="flex flex-col z-1 w-[100vw] lg:flex-row">
+            <div className=" cursor-move flex flex-col items-center h-[75vh] w-[100vw] bg-transparent">
               {width < 800 ? (
                 <div
                   className="mx-3 mt-2 mb-4 text-sm"
@@ -94,7 +94,7 @@ export default function Reel() {
                 <></>
               )}
               {width < 800 && genreShow ? (
-                <div className="flex bg-white  pb-1  px-16 m-5 mt-3 z-0 h-36 flex-col items-center overflow-y-scroll no-scrollbar">
+                <div className="flex bg-white  pb-1  px-16 m-5 mt-3 z-20 h-36 flex-col items-center overflow-y-scroll no-scrollbar">
                   {genres.map((el) => (
                     <a
                       id="contrastText"
@@ -110,7 +110,7 @@ export default function Reel() {
               )}
               {width < 700 ? (
                 <Draggable disabled="true">
-                  <div className="top-20 z-30 min-h-[100vh] px-3 lg:w-fit w-full pb-3 border-black bg-white lg:border-4 overflow-y-scroll overflow-x-hidden no-scrollbar">
+                  <div className="top-20 z-30 min-h-[100vh] px-3 lg:w-fit w-full pb-3 border-black bg-white lg:border overflow-y-scroll overflow-x-hidden no-scrollbar">
                     {width > 700 ? (
                       <div className="sticky top-0 right-0 pr-2 h-6 pt-1 z-20 bg-white text-black items-right h-fit w-full align-right text-xs text-right">
                         [drag me (here)]{" "}
@@ -124,7 +124,7 @@ export default function Reel() {
                 </Draggable>
               ) : (
                 <Draggable>
-                  <div className="top-20 z-30 mt-5 h-full px-3 w-fit mt-0 pb-3 border-black bg-white border-4 overflow-y-scroll overflow-x-hidden no-scrollbar">
+                  <div className="top-20 z-30 mt-5 h-full px-3 w-fit mt-0 pb-3 border-black bg-white border-2 overflow-y-scroll overflow-x-hidden no-scrollbar">
                     <div className="sticky top-0 right-0 pr-2 h-6 pt-1 z-20 bg-white text-black items-right h-fit w-full align-right text-xs text-right">
                       [drag me (here)]{" "}
                     </div>
@@ -135,7 +135,7 @@ export default function Reel() {
             </div>
             {width > 700 ? (
               <Draggable>
-                <div className="lg:p-2 mr-10 mt-10  lg:border-4 border-black bg-white h-fit  w-[50wv] relative cursor-move">
+                <div className="lg:p-2 mr-10 mt-10  lg:border-2 border-black bg-white h-fit  w-[50wv] relative cursor-move">
                   <div className="absolute top-0 z-20 bg-transparent h-36 w-full">
                     {" "}
                   </div>
@@ -153,7 +153,7 @@ export default function Reel() {
           </div>
         </div>
         <Hero className="z-0 mb-0 pt-10 mt-20" />
-        <div className="text-xs text-white -mb-2">All our shows occur on _____ land</div>
+        <div className="text-xs text-white absolute -bottom-1">All our shows occur on _____ land</div>
       </div>
     </div>
   );

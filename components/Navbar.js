@@ -50,9 +50,7 @@ export default function Navbar() {
 }
 
 const styles = {
-  NavContainer: "sticky top-5 w-[100vw] z-45 h-fit text-sm z-1 font-mono",
-  itemContainer:
-    " bg-white border border-black flex align-start w-[100-vw] m-10 mt-3 mb-0 border h-fit",
-
+  NavContainer: "sticky top-5 w-[100vw] z-40 h-fit text-sm z-1 font-mono",
+  itemContainer:"bg-white border border-black flex align-start w-[100-vw] m-10 mt-3 mb-0 border h-fit",
   item: "flex w-1/4 border border-black hover:border-2 hover:bg-slate-50 pl-4 py-3",
 };

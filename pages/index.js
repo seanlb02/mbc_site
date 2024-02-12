@@ -77,11 +77,13 @@ export default function Home() {
         {rearrange ? (
           <div className="flex overflow-hidden flex-col h-full absolute z-2">
             <Hero className=" " />
-            {width > 700 ? (
-              <Navbar className="absolute z-10 bg-transparent" />
-            ) : (
-              <MenuButton />
-            )}
+            {!rearrange ?
+                <>{width > 700 ? (
+                  <Navbar className="absolute z-10 bg-transparent" />
+                ) : (
+                  <MenuButton />
+                )}</>
+            : <></> }
             {width < 700 ? (
               <div className="absolute z-0 h-[70vh] lg:h-[100vh] w-[100vw] flex justify-center items-center align-center">
                 <img

@@ -28,6 +28,31 @@
   text-decoration: none;
 }
 
+@media only screen and (min-width: 768px) {
+.ais-hits {
+  display:grid; 
+  grid-template-columns: 1fr 1fr;
+  max-width:100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-container {
+  grid-template-columns: 1fr;
+  max-width:70%;
+  min-width:70%;
+  align-items: center;
+  justify-content: center;
+}
+
+.ais-hits--item event-container {
+  grid-template-columns: 1fr;
+  max-width:60%;
+  align-items: center;
+  justify-content: center;
+}
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

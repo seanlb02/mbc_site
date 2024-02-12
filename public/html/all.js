@@ -47,8 +47,8 @@ const htmlString = `<html>
         <input id="eventsearchbar" name="q" placeholder="Search for events" style="display:none" />
         <div class="entries" >
           <div style="">
-            <div class="grid-container">
-              <div class="grid-item filter-wrap" style="">
+            <div class="grid-container" >
+              <div class="grid-item filter-wrap" >
                 <aside class="event-guide-filter">
                   <div id="clear-all"></div>
                   <section class="facet-wrapper">
@@ -65,11 +65,11 @@ const htmlString = `<html>
                   </section>
                 </aside>
               </div>
-              <div class="event-wrap">
-                <div class="results-wrapper"  >
-                  <main id="event-guide-hits" style=";" class="clearfix ">
+              <div class="event-wrap" >
+                <div class="results-wrapper"  ">
+                  <main id="event-guide-hits"  class="clearfix ">
                   </main>
-                  <section id="pagination" style="display:none"></section>
+                  <section id="pagination" ></section>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ const htmlString = `<html>
    
     
         var hitTemplate =
-            '<article class="hit" style:"">' +
+            '<article  >' +
             '<a href="{{EventUrl}}"  target="_blank" class="clearfix" >' +
             '<div class="product-picture-wrapper no-pad-left col-xs-4 col-sm-12 " >' +
             '<div class="product-picture"><img src="{{EventImage1}}" alt="{{EventNameClean}}" /></div>' +
@@ -139,7 +139,7 @@ const htmlString = `<html>
             '</article>';
     
         var noResultsTemplate =
-            '<div class="no-results text-center">There are currently no results found matching <strong>{{query}}</strong>.</div>';
+            '<div class="no-results text-center">There are currently no results found matching</div>';
     
         var menuTemplate =
             '<a href="javascript:void(0);" class="facet-item {{#isRefined}}active{{/isRefined}}"><span class="facet-name"><em class="fa fa-angle-right"></em>  {{name}}</span class="facet-name"></a>';

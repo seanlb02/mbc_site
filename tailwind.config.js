@@ -48,6 +48,7 @@ module.exports = {
         fadeout: "fadeout 900ms ease-in",
         blurin: "blurin 800ms ease-out",
         blurinslow: "blurin 1100ms ease-out",
+        leftslow:"left 2s linear"
       },
       fontFamily: { sans: ["Helvetica", "Arial", "sans-serif"] },
       backgroundImage: {

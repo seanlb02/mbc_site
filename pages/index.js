@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <main className={styles.pageContainer}>
-      <div className="relative h-[100vh] w-[100vw] ">
+      <div className={`relative ${rearrange ? "overflow-y-hidden" : ""}  h-[100vh] w-[100vw]`}>
       <div className="absolute z-0 h-[50vh] lg:h-[100vh] w-[100vw] flex justify-center items-center align-center">
                 <Image
                   priority

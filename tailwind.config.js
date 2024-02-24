@@ -38,6 +38,10 @@ module.exports = {
           "0%": { filter: "blur(16px)" },
           "100%": { filter: "blur(0px)" },
         },
+        opendown: {
+          "0%": { bottom: "0%" },
+          "100%": { bottom: "100%"},
+        }
       },
       animation: {
         down: "down 450ms ease-in",
@@ -48,7 +52,8 @@ module.exports = {
         fadeout: "fadeout 900ms ease-in",
         blurin: "blurin 800ms ease-out",
         blurinslow: "blurin 1100ms ease-out",
-        leftslow:"left 2s linear"
+        leftslow:"left 2s linear",
+        pullopen: "opendown 700ms ease-in"
       },
       fontFamily: { sans: ["Helvetica", "Arial", "sans-serif"] },
       backgroundImage: {

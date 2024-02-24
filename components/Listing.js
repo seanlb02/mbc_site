@@ -17,7 +17,7 @@ export default function Listing({ name, artist, label, logo, location, date }) {
   }, []);
 
   return (
-    <main className="flex mb-3 mt-5 flex-col h-[50vh] lg:h-[75vh]  lg:mx-10 mx-2 border border-black overflow-hidden">
+    <main className="flex mb-3 mt-5 flex-col h-[40vh] lg:h-[75vh]  lg:mx-10 mx-2 border border-black overflow-hidden">
       <section className="flex lg:h-20 h-12 border-b border-black">
         <div className="flex h-full pb-2 w-2/5 pl-3 font-bold items-end border-r text-xs lg:text-sm border-black">
           {name}
@@ -51,7 +51,7 @@ export default function Listing({ name, artist, label, logo, location, date }) {
             src={logo}
             width={500}
             height={500}
-            className="flex h-1/2 w-1/2 "
+            className="flex h-full w-1/2 "
           ></Image>
         </div>
         {images.map((el) => (
@@ -71,7 +71,7 @@ export default function Listing({ name, artist, label, logo, location, date }) {
 
 const styles = {
   itemContainer:
-    "flex flex-row h-[50vh] w-[100vw] lg:h-full overflow-auto no-scrollbar",
+    "flex flex-row h-[40vh] w-[100vw] lg:h-full overflow-auto no-scrollbar",
   imageBox:
-    "flex flex-col min-w-96 lg:min-w-[30vw] items-center justify-center",
+    "flex flex-col min-w-96 lg:min-w-[30vw] h-[40vh] items-center justify-center",
 };
